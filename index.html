@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Calculator</title>
+
+  <!-- Boxicons CDN -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <input id="display" type="text" readonly placeholder="0" />
+
+    <div class="buttons">
+      <!-- Row 1 -->
+      <button class="btn" data-action="clear" title="Clear"><i class='bx bx-trash'></i></button>
+      <button class="btn" data-action="back" title="Backspace"><i class='bx bx-arrow-back'></i></button>
+      <button class="btn" data-value="(" title="Open parenthesis">(</button>
+      <button class="btn" data-value=")" title="Close parenthesis">)</button>
+
+      <!-- Row 2 -->
+      <button class="btn" data-value="7">7</button>
+      <button class="btn" data-value="8">8</button>
+      <button class="btn" data-value="9">9</button>
+      <button class="btn" data-value="/" title="Divide"><i class='bx bx-divide'></i></button>
+
+      <!-- Row 3 -->
+      <button class="btn" data-value="4">4</button>
+      <button class="btn" data-value="5">5</button>
+      <button class="btn" data-value="6">6</button>
+      <button class="btn" data-value="*" title="Multiply"><i class='bx bx-x'></i></button>
+
+      <!-- Row 4 -->
+      <button class="btn" data-value="1">1</button>
+      <button class="btn" data-value="2">2</button>
+      <button class="btn" data-value="3">3</button>
+      <button class="btn" data-value="-" title="Minus">-</button>
+
+      <!-- Row 5 -->
+      <button class="btn" data-value="0" title="Zero">0</button>
+      <button class="btn" data-value="." title="Decimal">.</button>
+      <button class="btn equals" data-action="equals" title="Equals"><i class='bx bx-equal'></i></button>
+      <button class="btn" data-value="+" title="Plus">+</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
